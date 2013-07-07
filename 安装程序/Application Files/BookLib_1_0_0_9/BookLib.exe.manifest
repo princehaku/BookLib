@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly manifestVersion="1.0" xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1">
+  <asmv1:assemblyIdentity version="1.0.0.9" name="BookLib.exe" publicKeyToken="5227fad88f09f1c5" language="neutral" processorArchitecture="x86" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="BookLib" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
+    <commandLine file="BookLib.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet class="System.Security.PermissionSet" version="1" Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!-- UAC 清单选项
+            如果希望更改 Windows 用户帐户控制级别，请用以下节点之一替换 
+            requestedExecutionLevel 节点。
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+            如果您希望利用文件和注册表虚拟化提供
+            向后兼容性，请删除 requestedExecutionLevel 节点。
+        -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="4" minorVersion="10" buildNumber="0" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="2.0.50727.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="BookLib.exe" size="133632">
+      <assemblyIdentity name="BookLib" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>ao0NRKiIu0Cg5iNoTQmrGeClog0=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DBcore.dll" size="233472">
+      <assemblyIdentity name="DBcore" version="1.0.3779.691" language="neutral" processorArchitecture="x86" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>3qdcyTpGE2hjLDA9xwk/EudIFRQ=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DotNetSpeech.dll" size="163840">
+      <assemblyIdentity name="DotNetSpeech" version="5.1.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>AsQe769+aFVswoVEzo07PN0wn9U=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ReadFile.dll" size="5632">
+      <assemblyIdentity name="ReadFile" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>xxFz41xOzmvjZmY+kcnA0gOTCx8=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="TTS.dll" size="4608">
+      <assemblyIdentity name="TTS" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>jdKFSd2i/v/v+SI9vQ9epJXb3P4=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="config.inc" size="14">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>Cn9HaxcUXTMR57fbPUfVf97cu4Y=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="DB\PWD.mdb" size="261">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>YToL+Klm03amrx1AV1zol+h+UN8=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=princehaku-win7\princehaku" issuerKeyHash="d148f8f4134b625cb791b394a982c9a2836f9968" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>E67MskIoww+tD615pORFuCGJ61g=</DigestValue></Reference></SignedInfo><SignatureValue>QMO5lVkrSnfoUoO5RY3khQW3Q9AfeMn95HtOkwKnBS68JN0kJVOVE2/dk/ZHtXudf81PVfdUEs5zEQProawhaATZ0zUvDBTfoE7a/Vj3f6O0Rp9sNjs8End5iwyhukTtdeCmBWvrxCJ394PtmXEE+K5T57C8NKgjdbyLH39Hcfs=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>tXA5LjkvRRah7VMpCnGQ//c7fF1RY2/nXDYQ8u8tkBjxJlQyOO4atwK9LmpI3rJS5AKSpBJNBhiuSFYZymUS+4ZLyc6sMy4hSlSjqN0j54fUC6pr1m+T1eF7x6FnxeXRUmbbbQx+33Mb/gagX+bWf+lcFiDnh9STQmvD5KTHO/8=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="58eb8921b845e4a479ad0fad0fc32842b2ccae13" Description="" Url=""><as:assemblyIdentity version="1.0.0.9" name="BookLib.exe" publicKeyToken="5227fad88f09f1c5" language="neutral" processorArchitecture="x86" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=princehaku-win7\princehaku</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>jqzeppJtJ6/dtcoxY10g58FRk7M=</DigestValue></Reference></SignedInfo><SignatureValue>PE3/p+UNHb6GpIxeryMjKxKu9RncxPnTrMMel9oGzA7654ExjCYQSskjrZZwdixcH25PimQXFnUV5C+y49KkWXnLutjS/RYQ8d2Qxa9/geMpTllfsV+UaQv1y98uVKlvmLAgFcLlJ+gX8bZiDv/XtoCEkVDNga6sqJG4gOngkb4=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>tXA5LjkvRRah7VMpCnGQ//c7fF1RY2/nXDYQ8u8tkBjxJlQyOO4atwK9LmpI3rJS5AKSpBJNBhiuSFYZymUS+4ZLyc6sMy4hSlSjqN0j54fUC6pr1m+T1eF7x6FnxeXRUmbbbQx+33Mb/gagX+bWf+lcFiDnh9STQmvD5KTHO/8=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIICATCCAWqgAwIBAgIQLybOhRa1x5ZKq+jX7PIknDANBgkqhkiG9w0BAQUFADA/MT0wOwYDVQQDHjQAcAByAGkAbgBjAGUAaABhAGsAdQAtAHcAaQBuADcAXABwAHIAaQBuAGMAZQBoAGEAawB1MB4XDTEwMDUwNjA5MjgzOVoXDTExMDUwNjE1MjgzOVowPzE9MDsGA1UEAx40AHAAcgBpAG4AYwBlAGgAYQBrAHUALQB3AGkAbgA3AFwAcAByAGkAbgBjAGUAaABhAGsAdTCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAtXA5LjkvRRah7VMpCnGQ//c7fF1RY2/nXDYQ8u8tkBjxJlQyOO4atwK9LmpI3rJS5AKSpBJNBhiuSFYZymUS+4ZLyc6sMy4hSlSjqN0j54fUC6pr1m+T1eF7x6FnxeXRUmbbbQx+33Mb/gagX+bWf+lcFiDnh9STQmvD5KTHO/8CAwEAATANBgkqhkiG9w0BAQUFAAOBgQCsN1Go2uZ6j+HJ+tAwRu771M3ZhLCeC5wXHrnRr6b1UqbrWwHCem6GZxR2xjUV5LGORJgiipuFqyNDEu9uKPgBJOuPv+CatofpT5pcQZQ9FsgV0PkJ1kfxrkm1m4dEEo6gCi9Sc+afbsg5NHmwKPtxI81r2LBOSr5MPPRc1v3hTw==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
